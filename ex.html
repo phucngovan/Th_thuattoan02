@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for (let i = 0; i < 20; i++) {
+        array.push(Math.floor(Math.random() * 10));
+    }
+    document.write(array+"<br>");
+
+    function count(arr) {
+        let cout = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == 2) {
+                cout = cout + 1;
+            }
+        }document.write("số lần xuất hiện là " + cout);
+    }
+    count(array);
+    </script>
+
+</body>
+</html>
